@@ -17,6 +17,7 @@ class MyAppTheme{
     chipTheme:MyChipTheme.lightChipTheme,
     scaffoldBackgroundColor: MyColor.white,
     appBarTheme:MyAppBarTheme.lightAppBarTheme,
+    checkboxTheme: ,
   );
   static ThemeData darkTheme=ThemeData();
 }
