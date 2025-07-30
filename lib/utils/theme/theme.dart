@@ -4,6 +4,7 @@ import 'package:shopping_app/utils/theme/widget_theme/appbar_theme.dart';
 import 'package:shopping_app/utils/theme/widget_theme/bottomsheet_theme.dart';
 import 'package:shopping_app/utils/theme/widget_theme/checkbox_theme.dart';
 import 'package:shopping_app/utils/theme/widget_theme/chip_theme.dart';
+import 'package:shopping_app/utils/theme/widget_theme/elevated_botton_theme.dart';
 import 'package:shopping_app/utils/theme/widget_theme/text_theme.dart';
 
 class MyAppTheme{
@@ -21,7 +22,8 @@ class MyAppTheme{
     appBarTheme:MyAppBarTheme.lightAppBarTheme,
     checkboxTheme: MyCheckboxTheme.lightCheckboxTheme,
     bottomSheetTheme:MyBottomSheetTheme.lightBottomSheetTheme,
-    elevatedButtonTheme: ,
+    elevatedButtonTheme:MyElevatedButtonTheme.lightElevatedButtonTheme,
+    outlinedButtonTheme: ,
 
   );
   static ThemeData darkTheme=ThemeData();
