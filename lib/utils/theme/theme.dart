@@ -21,7 +21,7 @@ class MyAppTheme{
     appBarTheme:MyAppBarTheme.lightAppBarTheme,
     checkboxTheme: MyCheckboxTheme.lightCheckboxTheme,
     bottomSheetTheme:MyBottomSheetTheme.lightBottomSheetTheme,
-
+    elevatedButtonTheme: ,
 
   );
   static ThemeData darkTheme=ThemeData();
