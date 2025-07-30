@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_app/utils/constant/colors.dart';
 import 'package:shopping_app/utils/theme/widget_theme/appbar_theme.dart';
+import 'package:shopping_app/utils/theme/widget_theme/bottomsheet_theme.dart';
+import 'package:shopping_app/utils/theme/widget_theme/checkbox_theme.dart';
 import 'package:shopping_app/utils/theme/widget_theme/chip_theme.dart';
 import 'package:shopping_app/utils/theme/widget_theme/text_theme.dart';
 
@@ -17,7 +19,10 @@ class MyAppTheme{
     chipTheme:MyChipTheme.lightChipTheme,
     scaffoldBackgroundColor: MyColor.white,
     appBarTheme:MyAppBarTheme.lightAppBarTheme,
-    checkboxTheme: ,
+    checkboxTheme: MyCheckboxTheme.lightCheckboxTheme,
+    bottomSheetTheme:MyBottomSheetTheme.lightBottomSheetTheme,
+
+
   );
   static ThemeData darkTheme=ThemeData();
 }
