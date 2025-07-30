@@ -5,6 +5,8 @@ import 'package:shopping_app/utils/theme/widget_theme/bottomsheet_theme.dart';
 import 'package:shopping_app/utils/theme/widget_theme/checkbox_theme.dart';
 import 'package:shopping_app/utils/theme/widget_theme/chip_theme.dart';
 import 'package:shopping_app/utils/theme/widget_theme/elevated_botton_theme.dart';
+import 'package:shopping_app/utils/theme/widget_theme/outlined_button_theme.dart';
+import 'package:shopping_app/utils/theme/widget_theme/text_field_theme.dart';
 import 'package:shopping_app/utils/theme/widget_theme/text_theme.dart';
 
 class MyAppTheme{
@@ -23,7 +25,8 @@ class MyAppTheme{
     checkboxTheme: MyCheckboxTheme.lightCheckboxTheme,
     bottomSheetTheme:MyBottomSheetTheme.lightBottomSheetTheme,
     elevatedButtonTheme:MyElevatedButtonTheme.lightElevatedButtonTheme,
-    outlinedButtonTheme: ,
+    outlinedButtonTheme:MyOutlinedButtonTheme.lightOutlinedButtonTeme,
+    inputDecorationTheme: MyTextFormFieldTheme.lightInputDecorationTheme,
 
   );
   static ThemeData darkTheme=ThemeData();
