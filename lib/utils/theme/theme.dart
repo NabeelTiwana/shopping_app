@@ -29,5 +29,20 @@ class MyAppTheme{
     inputDecorationTheme: MyTextFormFieldTheme.lightInputDecorationTheme,
 
   );
-  static ThemeData darkTheme=ThemeData();
+  static ThemeData darkTheme=ThemeData(
+    useMaterial3: true,
+    fontFamily: '',
+    brightness: Brightness.dark,
+    primaryColor: MyColor.primary,
+    disabledColor: MyColor.grey,
+    textTheme: MyTextTheme.darkTextTheme,
+    chipTheme: MyChipTheme.darkChipTheme,
+    scaffoldBackgroundColor: MyColor.black,
+    appBarTheme: MyAppBarTheme.darkAppBarTheme,
+    checkboxTheme: MyCheckboxTheme.darkCheckboxTheme,
+    bottomSheetTheme:MyBottomSheetTheme.darkBottomSheetTheme,
+    elevatedButtonTheme: MyElevatedButtonTheme.darkElevatedButtonTheme,
+    outlinedButtonTheme: MyOutlinedButtonTheme.darkOutlinedButtonTheme,
+    inputDecorationTheme: MyTextFormFieldTheme.darkInputDecorationTheme,
+  );
 }
