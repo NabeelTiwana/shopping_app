@@ -3,14 +3,23 @@
 A new Flutter project.
 
 ## Getting Started
+1-create my_app file,
+2-set Uitels
+   1-constant
+     i-color.dart
+    ii-sizes.dart
+   2-theme
+     i-theme.dart
+    ii-theme_widgets
+      i-text_theme
+      ii-chip_theme
+      iii-appbar_theme
+      iv-checkbox_theme
+       v-bottomsheet_theme
+       vi-elevated_botton_theme
+       vii-outlined_button_theme
+       viii-text_field_theme
+3-create splash
+4-onboarding screen
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+     
