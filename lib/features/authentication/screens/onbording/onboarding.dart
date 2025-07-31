@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:shopping_app/utils/constant/images.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -11,7 +12,13 @@ class OnboardingScreen extends StatelessWidget {
         children: [
           PageView(
            children: [
-             Lottie.asset(),
+             Column(
+               children: [
+                 Lottie.asset(MyImages.onboarding1Animation),
+                 Text(),
+               ],
+             ),
+
            ],
           ),
         ],

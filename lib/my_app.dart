@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:shopping_app/features/authentication/screens/onbording/onboarding.dart';
 import 'package:shopping_app/utils/theme/theme.dart';
 
 class MyApp extends StatelessWidget {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
         theme: MyAppTheme.lightTheme,
       darkTheme: MyAppTheme.darkTheme,
       themeMode: ThemeMode.system,
-      home: Scaffold(),
+      home:OnboardingScreen(),
     );
   }
 }
