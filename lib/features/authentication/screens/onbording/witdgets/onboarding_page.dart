@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-import '../../../../../utils/constant/sizes.dart';
 import '../../../../../utils/helpers/device_helper.dart';
 
 class OnBoardingPage extends StatelessWidget {
@@ -20,8 +19,6 @@ class OnBoardingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(
-        left: MySizes.defaultSpace,
-        right: MySizes.defaultSpace,
         top: MyDeviceHelper.getAppBarHeight(),
       ),
       child: Column(

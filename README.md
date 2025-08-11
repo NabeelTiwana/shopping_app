@@ -21,5 +21,7 @@ A new Flutter project.
        viii-text_field_theme
 3-create splash
 4-onboarding screen
+   i-constant->images.dart
+   ii-constant->text.dart
 
      

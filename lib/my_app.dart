@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shopping_app/features/authentication/screens/onbording/onboarding.dart';
 import 'package:shopping_app/utils/theme/theme.dart';
