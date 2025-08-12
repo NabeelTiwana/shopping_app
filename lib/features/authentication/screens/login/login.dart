@@ -9,8 +9,8 @@ import 'package:shopping_app/utils/constant/colors.dart';
 import 'package:shopping_app/utils/constant/images.dart';
 import 'package:shopping_app/utils/constant/sizes.dart';
 import 'package:shopping_app/utils/constant/text.dart';
-import 'package:shopping_app/utils/helpers/helper_functions.dart';
 
+import '../../../../common/widget/button/social_button.dart';
 import '../../../../common/widget/login_signup/form_divider.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -18,7 +18,6 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark=MyHelperFunctions.isDarkMode(context);
     return Scaffold(
       body: Padding(
         padding: MyPadding.screenPadding,
@@ -46,49 +45,7 @@ class LoginScreen extends StatelessWidget {
   }
 }
 
-class MySocialButton extends StatelessWidget {
-  const MySocialButton({
-    super.key,
-  });
 
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Container(
-          decoration: BoxDecoration(
-            border: Border.all(color: MyColor.grey),
-            borderRadius: BorderRadius.circular(100),
-          ),
-          child: IconButton(
-            onPressed: () {},
-            icon: SvgPicture.asset(
-              MyImages.googleIcon,
-              height: MySizes.iconMd,
-              width: MySizes.iconMd,
-            ),
-          ),
-        ),
-        SizedBox(width: MySizes.spaceBtwItems,),
-        Container(
-          decoration: BoxDecoration(
-            border: Border.all(color: MyColor.grey),
-            borderRadius: BorderRadius.circular(100),
-          ),
-          child: IconButton(
-            onPressed: () {},
-            icon: SvgPicture.asset(
-              MyImages.facebookIcon,
-              height: MySizes.iconMd,
-              width: MySizes.iconMd,
-            ),
-          ),
-        ),
-      ],
-    );
-  }
-}
 
 
 
