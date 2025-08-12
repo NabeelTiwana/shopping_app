@@ -3,12 +3,15 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shopping_app/common/style/padding.dart';
 import 'package:shopping_app/common/widget/button/elevated_button.dart';
+import 'package:shopping_app/features/authentication/screens/login/widgets/login_form.dart';
 import 'package:shopping_app/features/authentication/screens/login/widgets/login_header.dart';
 import 'package:shopping_app/utils/constant/colors.dart';
 import 'package:shopping_app/utils/constant/images.dart';
 import 'package:shopping_app/utils/constant/sizes.dart';
 import 'package:shopping_app/utils/constant/text.dart';
 import 'package:shopping_app/utils/helpers/helper_functions.dart';
+
+import '../../../../common/widget/login_signup/form_divider.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -31,7 +34,7 @@ class LoginScreen extends StatelessWidget {
             MyLoginForm(),
             SizedBox(height: MySizes.spaceBtwSections),
             //divider
-            MyFormDivider(dark: dark),
+            MyFormDivider(title: MyText.orSignInWith,),
             SizedBox(height: MySizes.spaceBtwSections),
             //Footer
             //social button
@@ -87,32 +90,7 @@ class MySocialButton extends StatelessWidget {
   }
 }
 
-class MyFormDivider extends StatelessWidget {
-  const MyFormDivider({
-    super.key,
-    required this.dark,
-  });
 
-  final bool dark;
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: Divider(indent: 60, endIndent: 5, thickness: 0.5,color: dark?MyColor.darkGrey:MyColor.grey,),
-        ),
-        Text(
-          MyText.orSignInWith,
-          style: Theme.of(context).textTheme.labelMedium,
-        ),
-        Expanded(
-          child: Divider(indent: 5, endIndent: 60, thickness: 0.5,color: dark?MyColor.darkGrey:MyColor.grey,),
-        ),
-      ],
-    );
-  }
-}
 
 
 
