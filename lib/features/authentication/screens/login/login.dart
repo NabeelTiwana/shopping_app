@@ -19,7 +19,21 @@ class LoginScreen extends StatelessWidget {
             //Title& subTitle
             LoginHeader(),
             //Form
-
+             Column(
+               children: [
+                 //Email
+                 TextFormField(
+                   decoration: InputDecoration(
+                     prefixIcon: Icon(Iconsax)
+                   ),
+                 ),
+                 //Password
+                 //Remember Me
+                 //forgetPassword 
+                 //Sign in
+                 //Create Account
+               ],
+             ),
             //divider
             //social button
 
