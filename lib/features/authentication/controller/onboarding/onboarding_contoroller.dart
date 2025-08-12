@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import 'package:shopping_app/features/authentication/screens/login/login.dart';
 
 // ignore: camel_case_types
 class onBoardingController extends GetxController {
@@ -24,6 +25,7 @@ class onBoardingController extends GetxController {
   //Update current index and jump to the next page
   void nextPage() {
     if (currentIndex.value == 2) {
+      Get.offAll(()=>LoginScreen());
       return;
     }
     currentIndex.value++;
