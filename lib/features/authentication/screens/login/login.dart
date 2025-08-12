@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shopping_app/common/style/padding.dart';
 import 'package:shopping_app/common/widget/button/elevated_button.dart';
+import 'package:shopping_app/utils/constant/colors.dart';
 import 'package:shopping_app/utils/constant/sizes.dart';
 import 'package:shopping_app/utils/constant/text.dart';
 
@@ -32,8 +33,20 @@ class LoginScreen extends StatelessWidget {
                Expanded(child: Divider(indent: 5,endIndent: 60,thickness: 0.5,)),
              ],
            ),
-            SizedBox(height: ,)
+            SizedBox(height:MySizes.spaceBtwSections ,),
+            //Footer
             //social button
+            Row(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(color: MyColor.grey),
+                    borderRadius: BorderRadius.circular(100),
+                  ),
+                  child: IconButton(onPressed: (){}, icon: ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
