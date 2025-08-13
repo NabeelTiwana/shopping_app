@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-
-import '../../../../../utils/constant/colors.dart';
+import 'package:shopping_app/features/authentication/screens/signup/widgets/privacy_policy_chackbox.dart';
 import '../../../../../utils/constant/sizes.dart';
 import '../../../../../utils/constant/text.dart';
 
@@ -59,7 +58,7 @@ class MySignupForm extends StatelessWidget {
         ),
         SizedBox(height: MySizes.spaceBtwInputFields / 2),
         //CheckBox
-        MyPrivicyPolicyChackBox(),
+        MyPrivacyPolicyChackBox(),
       ],
     );
   }

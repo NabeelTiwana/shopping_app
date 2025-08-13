@@ -20,6 +20,7 @@ class SignupScreen extends StatelessWidget {
         child: Padding(
           padding: MyPadding.screenPadding,
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               //Header
               Text(
