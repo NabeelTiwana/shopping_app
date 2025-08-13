@@ -41,4 +41,9 @@ class MyText {
   static const String forgetPasswordTitle = 'Forget Password';
   static const String forgetPasswordSubTitle = 'No worries! Enter Your registered email address, and we\'ll help you reset your password';
   static const String submit = 'Submit';
+
+  //Reset Password Screen
+  static const String resetPasswordTitle='Password Reset Email Sent';
+  static const String resetPasswordSubTitle='we\'ve sent a password reset link to your email. Please check your index and follow the instructions to reset your password';
+  static const String done='Done';
 }

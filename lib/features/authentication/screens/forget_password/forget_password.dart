@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shopping_app/common/style/padding.dart';
 import 'package:shopping_app/common/widget/button/elevated_button.dart';
+import 'package:shopping_app/features/authentication/screens/forget_password/reset_password.dart';
 import 'package:shopping_app/utils/constant/sizes.dart';
 import 'package:shopping_app/utils/constant/text.dart';
 
@@ -34,7 +37,7 @@ class ForgetPasswordScreen extends StatelessWidget {
               ),
               SizedBox(height: MySizes.spaceBtwItems,),
               //
-              MyElevatedButton(onPressed: (){}, child: Text(MyText.submit)),
+              MyElevatedButton(onPressed: ()=>Get.to(()=>ResetPasswordScreen()), child: Text(MyText.submit)),
             ],
           ),
         ),
