@@ -22,4 +22,15 @@ class MyText {
   static const String createAccount='Create Account';
   static const String orSignInWith='or Sign In With';
 
+  //SIgnUp Screen
+  static const String signupTitle='Let\'s Get You Registered';
+  static const String firstName='First Name';
+  static const String lastName='Last Name';
+  static const String phoneNumber='Phone Number';
+  static const String iAgreeTo='I agree to';
+  static const String privacyPolicy='Privacy Policy';
+  static const String and='and';
+  static const String termOfUse='Terms of use';
+  static const String orSignupWith='Or Sign up with';
+
 }
