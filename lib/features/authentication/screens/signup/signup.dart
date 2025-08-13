@@ -4,6 +4,7 @@ import 'package:shopping_app/common/style/padding.dart';
 import 'package:shopping_app/common/widget/button/elevated_button.dart';
 import 'package:shopping_app/common/widget/button/social_button.dart';
 import 'package:shopping_app/common/widget/login_signup/form_divider.dart';
+import 'package:shopping_app/features/authentication/screens/signup/widgets/signup_form.dart';
 import 'package:shopping_app/utils/constant/colors.dart';
 import 'package:shopping_app/utils/constant/sizes.dart';
 import 'package:shopping_app/utils/constant/text.dart';
