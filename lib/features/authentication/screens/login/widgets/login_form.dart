@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../common/widget/button/elevated_button.dart';
 import '../../../../../utils/constant/sizes.dart';
 import '../../../../../utils/constant/text.dart';
+import '../../signup/signup.dart';
 
 class MyLoginForm extends StatelessWidget {
   const MyLoginForm({super.key});
@@ -49,7 +52,9 @@ class MyLoginForm extends StatelessWidget {
         MyElevatedButton(onPressed: () {}, child: Text(MyText.signIn)),
         SizedBox(height: MySizes.spaceBtwItems / 2),
         //Create Account
-        MyElevatedButton(onPressed: () {}, child: Text(MyText.createAccount)),
+        SizedBox(
+          width: double.infinity,
+            child: OutlinedButton(onPressed:()=>Get.to(()=>SignupScreen()), child: Text(MyText.createAccount))),
       ],
     );
   }
