@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shopping_app/common/style/padding.dart';
 import 'package:shopping_app/features/authentication/screens/login/login.dart';
+import 'package:shopping_app/utils/constant/images.dart';
+import 'package:shopping_app/utils/helpers/device_helper.dart';
 
 class ResetPasswordScreen extends StatelessWidget {
   const ResetPasswordScreen({super.key});
@@ -20,17 +22,20 @@ class ResetPasswordScreen extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
-        child: Padding(padding: MyPadding.screenPadding,child: Column(
-          children: [
-            //Image
-
-            //title
-            //Email
-            //SubTitle
-            //Done
-            //Resend email
-          ],
-        ),),
+        child: Padding(
+          padding: MyPadding.screenPadding,
+          child: Column(
+            children: [
+              //Image
+              Image.asset(MyImages.mailSentImage,height: MyDeviceHelper.getScreenHeight(context)*0.4,),
+              //title
+              //Email
+              //SubTitle
+              //Done
+              //Resend email
+            ],
+          ),
+        ),
       ),
     );
   }
