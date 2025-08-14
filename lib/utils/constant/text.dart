@@ -47,4 +47,9 @@ class MyText {
   static const String resetPasswordSubTitle='we\'ve sent a password reset link to your email. Please check your index and follow the instructions to reset your password';
   static const String done='Done';
   static const String resendEmail = 'Resend Email';
+
+  //Verify Email Screen
+  static const String verifyEmailTitle='Verify your email address!';
+  static const String verifyEmailSubTitle='We\'ve sent a verification link to your email.Please check your inbox and click the link verify your account';
+  static const String mContinue='Continue';
 }
