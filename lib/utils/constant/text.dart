@@ -52,4 +52,9 @@ class MyText {
   static const String verifyEmailTitle='Verify your email address!';
   static const String verifyEmailSubTitle='We\'ve sent a verification link to your email.Please check your inbox and click the link verify your account';
   static const String mContinue='Continue';
+
+  //Account Created Successfully Screen
+static const String accountCreatedTitle='Your account successfully created';
+static const String accountCreatedSubTitle='Congratulation! Your account has been successfully created. you can now explore all the amazing features,start personalizing your experience, and enjoy seamless access to our servicess. Let\'s get started!';
+
 }

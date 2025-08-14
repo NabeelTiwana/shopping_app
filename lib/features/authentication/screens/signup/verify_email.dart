@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shopping_app/common/style/padding.dart';
 import 'package:shopping_app/common/widget/button/elevated_button.dart';
+import 'package:shopping_app/common/widget/screen/success_screen.dart';
 import 'package:shopping_app/utils/constant/images.dart';
 import 'package:shopping_app/utils/constant/sizes.dart';
 import 'package:shopping_app/utils/constant/text.dart';
@@ -34,7 +35,7 @@ class VerifyEmailScreen extends StatelessWidget {
               Text(MyText.verifyEmailSubTitle,style: Theme.of(context).textTheme.bodySmall,textAlign: TextAlign.center,),
               SizedBox(height: MySizes.spaceBtwSections,),
               //Done
-              MyElevatedButton(onPressed: ()=>Get.to(()=>), child: Text(MyText.mContinue)),
+              MyElevatedButton(onPressed: ()=>Get.to(()=>SuccessScreen()), child: Text(MyText.mContinue)),
               //Resend email
               SizedBox(
                   width: double.infinity,
