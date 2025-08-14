@@ -4,6 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:shopping_app/features/authentication/screens/forget_password/forget_password.dart';
 
 import '../../../../../common/widget/button/elevated_button.dart';
+import '../../../../../navigation_menu.dart';
 import '../../../../../utils/constant/sizes.dart';
 import '../../../../../utils/constant/text.dart';
 import '../../signup/signup.dart';
@@ -49,7 +50,7 @@ class MyLoginForm extends StatelessWidget {
         ),
         SizedBox(height: MySizes.spaceBtwSections),
         //Sign in
-        MyElevatedButton(onPressed: () {}, child: Text(MyText.signIn)),
+        MyElevatedButton(onPressed: ()=>Get.to(()=>NavigationMenu()), child: Text(MyText.signIn)),
         SizedBox(height: MySizes.spaceBtwItems / 2),
         //Create Account
         SizedBox(
