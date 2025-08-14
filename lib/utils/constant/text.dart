@@ -46,4 +46,5 @@ class MyText {
   static const String resetPasswordTitle='Password Reset Email Sent';
   static const String resetPasswordSubTitle='we\'ve sent a password reset link to your email. Please check your index and follow the instructions to reset your password';
   static const String done='Done';
+  static const String resendEmail = 'Resend Email';
 }
