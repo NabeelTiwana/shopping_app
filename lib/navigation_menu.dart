@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shopping_app/utils/constant/colors.dart';
+import 'package:shopping_app/utils/helpers/helper_functions.dart';
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final controller=Get.put(NavigationController());
+    final controller = Get.put(NavigationController());
+    bool dark =MyHelperFunctions.isDarkMode(context);
     return Scaffold(
-      body:Obx(()=> controller.screens[controller.selectedIndex.value],),
+      body: Obx(() => controller.screens[controller.selectedIndex.value]),
       bottomNavigationBar: Obx(
-        ()=> NavigationBar(
+        () => NavigationBar(
           elevation: 0,
           selectedIndex: controller.selectedIndex.value,
-          backgroundColor: MyColor.light,
-          indicatorColor: MyColor.black.withValues(alpha: 0.1),
+          backgroundColor:dark?MyColor.dark: MyColor.light,
+          indicatorColor:dark?MyColor.light.withValues(alpha: 0.1): MyColor.dark.withValues(alpha: 0.1),
           onDestinationSelected: (index) {
             controller.selectedIndex.value = index;
           },
@@ -33,9 +34,14 @@ class NavigationMenu extends StatelessWidget {
     );
   }
 }
-class NavigationController extends GetxController{
-  RxInt  selectedIndex = 0.obs;
 
-  List<Widget>screens=[Container(color:Colors.red),];
+class NavigationController extends GetxController {
+  RxInt selectedIndex = 0.obs;
 
+  List<Widget> screens = [
+    Container(color: Colors.red),
+    Container(color: Colors.green),
+    Container(color: Colors.orange),
+    Container(color: Colors.pinkAccent),
+  ];
 }
