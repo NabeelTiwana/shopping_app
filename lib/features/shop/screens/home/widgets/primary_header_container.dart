@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
+import 'package:shopping_app/common/widget/custom_shape/rounded_edge_container.dart';
 
 import '../../../../../common/widget/custom_shape/circular_container.dart';
-import '../../../../../common/widget/custom_shape/clipper/custom_rounded_container.dart';
 import '../../../../../utils/constant/colors.dart';
 import '../../../../../utils/helpers/device_helper.dart';
 
@@ -12,8 +12,7 @@ class MyPrimaryHeaderContainer extends StatelessWidget {
   final Widget child;
   @override
   Widget build(BuildContext context) {
-    return ClipPath(
-      clipper: MyCustomRoundedEdge(),
+    return MyRoundedEdgesContainer(
       child: Container(
         color: MyColor.primary,
         height: MyDeviceHelper.getScreenHeight(context)*0.4,
